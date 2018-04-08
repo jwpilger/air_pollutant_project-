@@ -1,0 +1,179 @@
+[plot1] #Coursera Exploratory Data Analysis course project 2
+[plot1] #Explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United States
+[plot1] #R script: plot1.R Author: John Pilger Date: Sat Apr  7 12:30:10 2018
+[plot1] ##Retrieve National Emissions Inventory (NEI) and SCC files using downloadfile function 
+[plot1] ##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+[plot1] ##Using project file folder: ./Pollution
+[plot1] downloading file: https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0 29. 14 29.2M   14  53 29.2M   53 15.5M    0     0  2752k      100 29.2M  100 29.2M    0     0  7560k       0     0  7780k      0  0:00:03  0
+[plot1] ##Download Complete Duration: 3.866527 secs 
+[plot1] ##File size (MB): 29.22374
+[plot1] writing downloaded file: ./Pollution/Pollution-download.zip
+[plot1] ##Zip file extracted to folder: ./Pollution/Pollution-data
+[plot1] ##Processing files in zip folder: ./Pollution
+[plot1] ##Zip file folder count: 2
+[plot1] ##[#2] PM2.5 Emissions file ./Pollution/Pollution-data/summarySCC_PM25.rds
+[plot1] ##PM2.5 Emissions data rows x cols : 6497651 x 6
+[plot1] ##Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?
+[plot1] ##The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+[plot1] ##Using the base plotting system, make a plot showing the total PM2.5 emission.
+[plot1] ##Sum Emissions by year
+[plot1] ##Create a barchart showing emissions by year delta
+  year Emissions
+1 1999   7332967
+2 2002   5635780
+3 2005   5454703
+4 2008   3464206
+[plot1] ## ./Pollution/plot1.png Complete and written to project folder
+Warning message:
+package ‘RCurl’ was built under R version 3.2.4 
+> source('~/Documents/Coursera Data Science Specialization/R files/plot2.R')
+[plot2] #Coursera Exploratory Data Analysis course project 2
+[plot2] #Explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United States
+[plot2] #R script: plot2.R Author: John Pilger Date: Sat Apr  7 12:32:16 2018
+[plot2] ##Retrieve National Emissions Inventory (NEI) and SCC files using downloadfile function 
+[plot2] ##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+[plot2] ##Using project file folder: ./Pollution
+[plot2] file already downloaded: ./Pollution/Pollution-download.zip
+[plot2] ##Zip file already extracted to folder: ./Pollution/Pollution-data
+[plot2] ##Processing files in zip folder: ./Pollution
+[plot2] ##Zip file folder count: 2
+[plot2] ##[#2] PM2.5 Emissions file ./Pollution/Pollution-data/summarySCC_PM25.rds
+[plot2] ##PM2.5 Emissions data rows x cols : 6497651 x 6
+[plot2] ##Have total emissions from PM2.5 decreased in Baltimore from 1999 to 2008?
+[plot2] ##The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+[plot2] ##Using the base plotting system, make a plot showing the total PM2.5 emission.
+[plot2] ##PM2.5 Baltimore Emissions data rows x cols : 2096 x 6
+[plot2] ##Sum Emissions by year for Baltimore - fips = 24510
+[plot2] ##Create a barchart showing emissions by year for Baltimore
+  year Emissions
+1 1999  3274.180
+2 2002  2453.916
+3 2005  3091.354
+4 2008  1862.282
+[plot2] ## ./Pollution/plot2.png Complete and written to project folder
+> source('~/Documents/Coursera Data Science Specialization/R files/plot3.R')
+[plot3] #Coursera Exploratory Data Analysis course project 2
+[plot3] #Explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United States
+[plot3] #R script: plot3.R Author: John Pilger Date: Sat Apr  7 12:33:32 2018
+[plot3] ##[1]Retrieve National Emissions Inventory (NEI) and SCC files using downloadfile function 
+[plot3] ##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+[plot3] ##Using project file folder: ./Pollution
+[plot3] file already downloaded: ./Pollution/Pollution-download.zip
+[plot3] ##Zip file already extracted to folder: ./Pollution/Pollution-data
+[plot3] ##Processing files in zip folder: ./Pollution
+[plot3] ##Zip file folder count: 2
+[plot3] ##[#2] PM2.5 Emissions file ./Pollution/Pollution-data/summarySCC_PM25.rds
+[plot3] ##PM2.5 Emissions data rows x cols : 6497651 x 6
+[plot3] ##Have PM2.5 emissions types decreased in Baltimore from 1999 to 2008?
+[plot3] ##The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+[plot3] ##Using the ggplot2 plotting package, make a plot showing Baltimore PM2.5 emission.
+[plot3] ##PM2.5 Baltimore Emissions (subset) data rows x cols : 2096 x 6
+[plot3] ##Sum Emissions by year and type for Baltimore - fips = 24510
+[plot3] ##[3]Plot aggregate by type and show four years -  data rows x cols : 16 x 3
+[plot3] ##[4]Create a barchart showing emissions by year and type for Baltimore
+   year     type  Emissions
+1  1999 NON-ROAD  522.94000
+2  2002 NON-ROAD  240.84692
+3  2005 NON-ROAD  248.93369
+4  2008 NON-ROAD   55.82356
+5  1999 NONPOINT 2107.62500
+6  2002 NONPOINT 1509.50000
+7  2005 NONPOINT 1509.50000
+8  2008 NONPOINT 1373.20731
+9  1999  ON-ROAD  346.82000
+10 2002  ON-ROAD  134.30882
+11 2005  ON-ROAD  130.43038
+12 2008  ON-ROAD   88.27546
+13 1999    POINT  296.79500
+14 2002    POINT  569.26000
+15 2005    POINT 1202.49000
+16 2008    POINT  344.97518
+[plot3] ## ./Pollution/plot3.png Complete and written to project folder
+> source('~/Documents/Coursera Data Science Specialization/R files/plot4.R')
+[plot4] #Coursera Exploratory Data Analysis course project 2
+[plot4] #Explore the National Emissions Inventory database regarding fine particulate matter pollution in the US
+[plot4] #R script: plot4.R Author: John Pilger Date: Sat Apr  7 12:39:14 2018
+[plot4] ##[1]Retrieve National Emissions Inventory (NEI) and SCC files using downloadfile function 
+[plot4] ##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+[plot4] ##Using project file folder: ./Pollution
+[plot4] file already downloaded: ./Pollution/Pollution-download.zip
+[plot4] ##Zip file already extracted to folder: ./Pollution/Pollution-data
+[plot4] ##Processing files in zip folder: ./Pollution
+[plot4] ##Zip file folder count: 2
+[plot4] ##[#2] PM2.5 Emissions file ./Pollution/Pollution-data/summarySCC_PM25.rds
+[plot4] ##PM2.5 Emissions data rows x cols : 6497651 x 6
+[plot4] ##[#3] Source Classification Code Table file ./Pollution/Pollution-data/Source_Classification_Code.rds
+[plot4] ##Source Classification Code Table data rows x cols : 11717 x 15
+[plot4] ##Merge NEI and SCC data frames rows x cols : 6497651 x 20
+[plot4] ##PM2.5 Emissions filter data rows x cols : coal  53400 x 20
+[plot4] ##Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
+[plot4] ##The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+[plot4] ##Using the ggplot2 plotting package, make a plot showing US PM2.5 emission from coal.
+[plot4] ##[3]Plot aggregate by year -  data rows x cols : 4 x 2
+[plot4] ##[4]Create a barchart showing emissions for coal points
+  year Emissions
+1 1999  602624.1
+2 2002  564940.0
+3 2005  569654.7
+4 2008  358083.9
+[plot4] ## ./Pollution/plot4.png Complete and written to project folder
+> source('~/Documents/Coursera Data Science Specialization/R files/plot5.R')
+[plot5] #Coursera Exploratory Data Analysis course project 2
+[plot5] #Explore the National Emissions Inventory database regarding fine particulate matter pollution in the US
+[plot5] #R script: plot5.R Author: John Pilger Date: Sat Apr  7 12:42:10 2018
+[plot5] ##[1]Retrieve National Emissions Inventory (NEI) and SCC files using downloadfile function 
+[plot5] ##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+[plot5] ##Using project file folder: ./Pollution
+[plot5] file already downloaded: ./Pollution/Pollution-download.zip
+[plot5] ##Zip file already extracted to folder: ./Pollution/Pollution-data
+[plot5] ##Processing files in zip folder: ./Pollution
+[plot5] ##Zip file folder count: 2
+[plot5] ##[#2] PM2.5 Emissions file ./Pollution/Pollution-data/summarySCC_PM25.rds
+[plot5] ##PM2.5 Emissions data rows x cols : 6497651 x 6
+[plot5] ##PM2.5 Baltimore motor vehichle emissions (subset) data rows x cols : 1119 x 6
+[plot5] ##How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
+[plot5] ##The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+[plot5] ##Using the ggplot2 plotting package, make a plot showing PM2.5 emission from ON-ROAD
+[plot5] ##Sum Emissions by year and type= ON-ROAD for Baltimore - fips = 24510
+[plot5] ##[3]Plot aggregate by year -  data rows x cols : 4 x 2
+[plot5] ##[4]Create a barchart showing emissions for Baltimore motor vehicles points
+  year Emissions
+1 1999 346.82000
+2 2002 134.30882
+3 2005 130.43038
+4 2008  88.27546
+[plot5] ## ./Pollution/plot5.png Complete and written to project folder
+> source('~/Documents/Coursera Data Science Specialization/R files/plot6.R')
+[plot6] #Coursera Exploratory Data Analysis course project 2
+[plot6] #Explore the National Emissions Inventory database regarding fine particulate matter pollution in the US
+[plot6] #R script: plot6.R Author: John Pilger Date: Sat Apr  7 12:43:05 2018
+[plot6] ##[1]Retrieve National Emissions Inventory (NEI) and SCC files using downloadfile function 
+[plot6] ##Using working directory path: /Users/jpilger/Documents/Coursera Data Science Specialization/R files
+[plot6] ##Using project file folder: ./Pollution
+[plot6] file already downloaded: ./Pollution/Pollution-download.zip
+[plot6] ##Zip file already extracted to folder: ./Pollution/Pollution-data
+[plot6] ##Processing files in zip folder: ./Pollution
+[plot6] ##Zip file folder count: 2
+[plot6] ##[#2] PM2.5 Emissions file ./Pollution/Pollution-data/summarySCC_PM25.rds
+[plot6] ##PM2.5 Emissions data rows x cols : 6497651 x 6
+[plot6] ##PM2.5 Baltimore/LA motor vehichle emissions (subset) data rows x cols : 2097 x 6
+[plot6] ##How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore and LA?
+[plot6] ##The data that you will use for this assignment are for 1999, 2002, 2005, and 2008.
+[plot6] ##Using the ggplot2 plotting package, make a plot showing PM2.5 emission from ON-ROAD
+[plot6] ##Sum Emissions by year and type= ON-ROAD for Baltimore - fips = 24510 & 06037
+[plot6] ##[3]Plot aggregate by year -  data rows x cols : 8 x 3
+[plot6] ##[4]Create a barchart showing emissions for Baltimore/LA motor vehicles
+  Year        City  Emissions
+1 1999 Los Angeles 3931.12000
+2 2002 Los Angeles 4273.71020
+3 2005 Los Angeles 4601.41493
+4 2008 Los Angeles 4101.32100
+5 1999   Baltimore  346.82000
+6 2002   Baltimore  134.30882
+7 2005   Baltimore  130.43038
+8 2008   Baltimore   88.27546
+[plot6] ## ./Pollution/plot6.png Complete and written to project folder
+> 
